@@ -1,0 +1,36 @@
+.imageContainer {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  & > * {
+    width: 100% !important;
+  }
+  & * {
+    position: relative !important;
+  }
+  & img {
+    height: auto !important;
+  }
+}
+
+.fitHeight {
+  height: 100%;
+  width: fit-content;
+}
+
+.imageChild {
+  position: absolute !important;
+  overflow: hidden;
+  height: inherit;
+}
+
+.bgOpaque {
+  &::after {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(black, 50%);
+    content: " ";
+  }
+}

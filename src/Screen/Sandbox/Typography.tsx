@@ -1,5 +1,5 @@
 import React from "react";
-import Typo from "../Component/Typo";
+import Typo from "../../Component/Typo";
 
 export interface ITypographyProps {}
 

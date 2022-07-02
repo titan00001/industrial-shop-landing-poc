@@ -1,5 +1,5 @@
 import * as React from "react";
-import MapContainer from "../Component/MapContainer";
+import MapContainer from "../../Component/MapContainer";
 
 interface IMapSandboxProps {}
 
