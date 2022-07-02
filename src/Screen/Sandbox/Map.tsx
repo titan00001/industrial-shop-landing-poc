@@ -6,7 +6,7 @@ interface IMapSandboxProps {}
 const MapSandbox: React.FunctionComponent<IMapSandboxProps> = (props) => {
   return (
     <>
-      <MapContainer height="200px" width="200px" />
+      <MapContainer height="600px" width="450px" />
     </>
   );
 };

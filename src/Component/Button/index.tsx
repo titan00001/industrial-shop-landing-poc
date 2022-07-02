@@ -7,8 +7,8 @@ interface IButtonProps {
   tertiary?: boolean;
   disabled?: boolean;
   text: string;
-  classes: string;
-  size: "sm" | "md" | "lg" | "full-width";
+  classes?: string;
+  size?: "sm" | "md" | "lg" | "full-width";
 }
 
 const Button: React.FunctionComponent<IButtonProps> = (props) => {
