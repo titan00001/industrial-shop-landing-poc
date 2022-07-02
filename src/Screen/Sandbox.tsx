@@ -1,13 +1,20 @@
 import * as React from "react";
 import Typography from "./Typography";
+import MapSandbox from "./Map";
 
 export interface ISandboxProps {}
 
 export const Sandbox: React.FC<ISandboxProps> = (props) => {
   return (
     <div>
-      Typography
-      <Typography />
+      <div>
+        Typography
+        <Typography />
+      </div>
+      <div>
+        Map
+        <MapSandbox />
+      </div>
     </div>
   );
 };
