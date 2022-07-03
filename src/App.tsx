@@ -6,8 +6,8 @@ import Home from "Screen/Home";
 const App = () => {
   return (
     <div className="App">
-      {/* <Sandbox /> */}
-      <Home />
+      <Sandbox />
+      {/* <Home /> */}
     </div>
   );
 };
