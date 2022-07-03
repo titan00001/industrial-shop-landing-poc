@@ -123,7 +123,7 @@ $grid-columns: 12;
 }
 
 //here's where we use the grid mixins
-.container {
+.layout-varying-height {
   @include grid;
   grid-auto-rows: 120px;
 
@@ -133,7 +133,7 @@ $grid-columns: 12;
 }
 
 //demo style
-.container {
+.layout-varying-height {
   font-family: sans-serif;
   max-width: 1000px;
   margin: 0 auto;
@@ -185,7 +185,7 @@ $grid-columns: 12;
 }
 
 //here's where we use the grid mixins
-.overlapping-container {
+.layout-overlapping {
   @include grid;
   grid-auto-rows: 90px;
 
@@ -195,7 +195,7 @@ $grid-columns: 12;
 }
 
 //demo style
-.overlapping-container {
+.layout-overlapping {
   font-family: sans-serif;
   max-width: 1000px;
   margin: 0 auto;

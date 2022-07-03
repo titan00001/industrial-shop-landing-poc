@@ -15,8 +15,8 @@ const Layout: React.FunctionComponent<ILayoutProps> = (props) => {
   const cls = clsx(
     variant === "equal-width-box" ? "grid-gallery" : "",
     variant === "varying-width-boxes" ? "flex-grid" : "",
-    variant === "varying-height-width-box" ? "container" : "",
-    variant === "overlapping-box" ? "overlapping-container" : ""
+    variant === "varying-height-width-box" ? "layout-varying-height" : "",
+    variant === "overlapping-box" ? "layout-overlapping" : ""
   );
   return (
     <>
