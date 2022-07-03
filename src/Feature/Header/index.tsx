@@ -1,11 +1,14 @@
 import Image from "Component/Image";
 import Link from "Component/Link";
+import useIsMobileViewport from "hooks/useIsMobileViewport";
 import * as React from "react";
 import "./header.style.scss";
 
 interface IHeaderProps {}
 
 const Header: React.FunctionComponent<IHeaderProps> = () => {
+  const { isMobile } = useIsMobileViewport();
+  console.log("from header, viewport is mobile", isMobile);
   return (
     <>
       <div className="header">

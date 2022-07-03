@@ -21,6 +21,7 @@ $grid-columns: 12;
   }
 }
 
+// Keep this with layout sandbox
 // demo of layout 1
 .grid-gallery {
   @include grid;
@@ -86,6 +87,7 @@ $grid-columns: 12;
   }
 }
 
+// Keep this with layout sandbox
 //demo style
 .col {
   display: flex;
@@ -132,6 +134,7 @@ $grid-columns: 12;
   }
 }
 
+// Keep this with layout sandbox
 //demo style
 .layout-varying-height {
   font-family: sans-serif;
@@ -194,6 +197,7 @@ $grid-columns: 12;
   }
 }
 
+// Keep this with layout sandbox
 //demo style
 .layout-overlapping {
   font-family: sans-serif;

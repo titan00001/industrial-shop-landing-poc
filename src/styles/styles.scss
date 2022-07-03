@@ -5,3 +5,8 @@
 @use "./spacing.style";
 @use "./button.style";
 @use "./layout.style";
+
+* {
+  // border: 1px dashed black;
+  box-sizing: border-box;
+}

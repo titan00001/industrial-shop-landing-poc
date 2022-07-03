@@ -45,8 +45,6 @@ const Image: React.FunctionComponent<IImageProps> = (props) => {
         parseInt(aspectRatio.split("/")[1], 10)
       : aspectRatio;
 
-  console.log(imageContent.url, image);
-
   if (imageContent.url)
     return (
       <div

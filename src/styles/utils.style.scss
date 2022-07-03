@@ -8,3 +8,11 @@
   text-overflow: ellipsis;
   white-space: nowrap;
 }
+
+.is-row-reverse {
+  flex-direction: row-reverse;
+}
+
+.is-column-reverse {
+  flex-direction: column-reverse;
+}
