@@ -1,6 +1,7 @@
 import Button from "Component/Button";
 import Link from "Component/Link";
 import Typo from "Component/Typo";
+import Footer from "Feature/Footer";
 import Header from "Feature/Header";
 import ImageCard from "Feature/ImageCard";
 import SideBySide from "Feature/SideBySide";
@@ -16,9 +17,9 @@ interface IHomeProps {}
 const Home: React.FunctionComponent<IHomeProps> = (props) => {
   return (
     <>
-      {/* <Header /> */}
+      <Header />
 
-      <SideBySide imageSrc={imagePlaceholder}>
+      {/* <SideBySide imageSrc={imagePlaceholder}>
         <Typo h2>Lorem ipsum dolor sit amet consectetur.</Typo>
         <Typo>
           Lorem ipsum dolor sit, amet consectetur adipisicing elit.
@@ -29,7 +30,7 @@ const Home: React.FunctionComponent<IHomeProps> = (props) => {
       <SideBySide imageOnRight imageSrc={imagePlaceholder}>
         <Typo h2>Lorem ipsum dolor sit amet consectetur.</Typo>
         <Button primary size="lg" text="CLick Here" />
-      </SideBySide>
+      </SideBySide> */}
 
       {/* <SideBySideOverlap overlapIn12Column={1} imageSrc={imagePlaceholder}>
         <Typo h2>Lorem ipsum dolor sit amet consectetur.</Typo>
@@ -77,6 +78,8 @@ const Home: React.FunctionComponent<IHomeProps> = (props) => {
           </Typo>
         </ImageCard>
       </Layout> */}
+
+      <Footer />
     </>
   );
 };

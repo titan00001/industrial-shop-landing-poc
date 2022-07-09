@@ -1,0 +1,13 @@
+.footer {
+  .heading {
+    padding: 0 var(--space-sm);
+  }
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.footer-nav {
+  display: flex;
+  flex-direction: column;
+}
