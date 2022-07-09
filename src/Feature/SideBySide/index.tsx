@@ -1,4 +1,5 @@
 import Image from "Component/Image";
+import SectionWrapper from "Component/SectionWrapper";
 import * as React from "react";
 import "./sideBySide.style.scss";
 
@@ -13,14 +14,12 @@ const SideBySide: React.FunctionComponent<ISideBySideProps> = (props) => {
 
   return (
     <>
-      <div
-        className={`${
-          imageOnRight ? "SideBySide--reverse" : "SideBySide"
-        } container`}
+      <SectionWrapper
+        classes={`${imageOnRight ? "SideBySide--reverse" : "SideBySide"}`}
       >
         <Image image={imageSrc} height={400} aspectRatio={1} />
         <div className="textBox default-padding">{children}</div>
-      </div>
+      </SectionWrapper>
     </>
   );
 };

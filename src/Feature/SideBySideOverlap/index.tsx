@@ -1,4 +1,5 @@
 import Image from "Component/Image";
+import SectionWrapper from "Component/SectionWrapper";
 import * as React from "react";
 import "./sideBySideOverlap.style.scss";
 
@@ -17,10 +18,10 @@ const SideBySideOverlap: React.FunctionComponent<ISideBySideOverlapProps> = (
   if (!imageOnRight)
     return (
       <>
-        <div className={`container sideByside--overlap`}>
+        <SectionWrapper classes={`sideByside--overlap`}>
           <Image image={imageSrc} height={400} aspectRatio={1} />
           <div className="textBox">{children}</div>
-        </div>
+        </SectionWrapper>
       </>
     );
 
