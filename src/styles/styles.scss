@@ -1,12 +1,33 @@
 @use "./color.style";
 @use "./typography.style";
-@use "./breakpoints.style";
+@use "./breakpoints.style" as breakpoints;
 @use "./utils.style.scss";
 @use "./spacing.style";
 @use "./button.style";
 @use "./layout.style";
 
 * {
-  // border: 1px dashed black;
+  border: 1px dashed black;
   box-sizing: border-box;
+}
+
+// div {
+//   padding: var(--component-padding);
+// }
+
+.container {
+  margin: auto;
+
+  @include breakpoints.sm {
+    width: 100%;
+  }
+  @include breakpoints.md {
+    width: 720px;
+  }
+  @include breakpoints.lg {
+    width: 900px;
+  }
+  @include breakpoints.xl {
+    width: 1024px;
+  }
 }

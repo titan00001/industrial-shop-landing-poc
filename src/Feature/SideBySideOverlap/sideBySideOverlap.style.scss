@@ -3,15 +3,14 @@
 
 $tablet: 760;
 
-.textBox {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
-  z-index: 2;
-}
-
 .sideByside--overlap {
+  .textBox {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 2;
+  }
   @include layout.grid;
   grid-auto-rows: 90px;
 

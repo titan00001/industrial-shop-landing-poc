@@ -16,3 +16,7 @@
 .is-column-reverse {
   flex-direction: column-reverse;
 }
+
+.default-padding {
+  padding: var(--component-padding);
+}

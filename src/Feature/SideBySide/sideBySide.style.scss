@@ -1,13 +1,13 @@
 @use "../../styles/breakpoints.style" as breakpoint;
 
-.textBox {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
-}
-
 .SideBySide {
+  .textBox {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+
   display: flex;
   flex-direction: column;
 

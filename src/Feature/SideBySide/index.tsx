@@ -16,10 +16,10 @@ const SideBySide: React.FunctionComponent<ISideBySideProps> = (props) => {
       <div
         className={`${
           imageOnRight ? "SideBySide--reverse" : "SideBySide"
-        } container `}
+        } container`}
       >
         <Image image={imageSrc} height={400} aspectRatio={1} />
-        <div className="textBox">{children}</div>
+        <div className="textBox default-padding">{children}</div>
       </div>
     </>
   );
