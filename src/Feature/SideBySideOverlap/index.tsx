@@ -18,7 +18,7 @@ const SideBySideOverlap: React.FunctionComponent<ISideBySideOverlapProps> = (
   if (!imageOnRight)
     return (
       <>
-        <SectionWrapper classes={`sideByside--overlap`}>
+        <SectionWrapper childClasses={`sideByside--overlap`}>
           <Image image={imageSrc} height={400} aspectRatio={1} />
           <div className="textBox">{children}</div>
         </SectionWrapper>
@@ -27,10 +27,10 @@ const SideBySideOverlap: React.FunctionComponent<ISideBySideOverlapProps> = (
 
   return (
     <>
-      <div className={`container sideByside--overlap`}>
+      <SectionWrapper childClasses={`sideByside--overlap`}>
         <div className="textBox">{children}</div>
         <Image image={imageSrc} height={400} aspectRatio={1} />
-      </div>
+      </SectionWrapper>
     </>
   );
 };

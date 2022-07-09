@@ -13,9 +13,15 @@ const FooterNav: React.FunctionComponent<IFooterNavProps> = (props) => {
       <Typo classes="heading" h4>
         Nav 1
       </Typo>
-      <Link text="link1" size="md" variant="secondary" />
-      <Link text="link2" size="md" variant="secondary" />
-      <Link text="link3" size="md" variant="secondary" />
+      <Link size="md" variant="secondary">
+        link1
+      </Link>
+      <Link size="md" variant="secondary">
+        link2
+      </Link>
+      <Link size="md" variant="secondary">
+        link3
+      </Link>
     </div>
   );
 };

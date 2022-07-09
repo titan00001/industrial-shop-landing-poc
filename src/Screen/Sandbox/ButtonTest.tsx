@@ -9,38 +9,38 @@ const ButtonTest: React.FunctionComponent<IButtonTestProps> = () => {
     <>
       <div>
         <div className="btns">
-          <Button text="Button" />
+          <Button>"Button"</Button>
 
-          <Button primary text="Button Primary" />
+          <Button primary>Button Primary"</Button>
 
-          <Button secondary text="Button Secondary" />
+          <Button secondary>Button Secondary"</Button>
 
-          <Button size="full-width" text="Full width" />
+          <Button size="full-width">Full width"</Button>
         </div>
 
-        <Button size="sm" text="Button Small" />
+        <Button size="sm">Button Small"</Button>
 
-        <Button size="md" text="Button Medium" />
+        <Button size="md">Button Medium"</Button>
 
-        <Button size="lg" text="Large" />
+        <Button size="lg">Large</Button>
       </div>
 
       <div>
         <div className="btns">
-          <Link text="Link" />
+          <Link>Lorem, ipsum dolor.</Link>
 
-          <Link variant="primary" text="Link Primary" />
+          <Link variant="primary">Lorem, ipsum dolor.</Link>
 
-          <Link variant="secondary" text="Link Secondary" />
+          <Link variant="secondary">Lorem, ipsum dolor.</Link>
 
-          <Link size="full-width" text="Full width" />
+          <Link size="full-width">Lorem, ipsum dolor.</Link>
         </div>
 
-        <Link size="sm" text="Link Small" />
+        <Link size="sm">Lorem, ipsum dolor.</Link>
 
-        <Link size="md" text="Link Medium" />
+        <Link size="md">Lorem, ipsum dolor.</Link>
 
-        <Link size="lg" text="Large" />
+        <Link size="lg">Lorem, ipsum dolor.</Link>
       </div>
     </>
   );

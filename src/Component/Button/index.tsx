@@ -6,13 +6,23 @@ interface IButtonProps {
   secondary?: boolean;
   tertiary?: boolean;
   disabled?: boolean;
-  text: string;
+  children: React.ReactNode;
   classes?: string;
   size?: "sm" | "md" | "lg" | "full-width";
+  action?: () => void | Promise<void>;
 }
 
 const Button: React.FunctionComponent<IButtonProps> = (props) => {
-  const { primary, secondary, tertiary, disabled, text, classes, size } = props;
+  const {
+    primary,
+    secondary,
+    tertiary,
+    disabled,
+    children,
+    classes,
+    size,
+    action,
+  } = props;
   const cls = clsx(
     classes,
     "btn",
@@ -22,7 +32,11 @@ const Button: React.FunctionComponent<IButtonProps> = (props) => {
     disabled ? "btn--disabled" : "",
     size ? `btn--${size}` : ""
   );
-  return <button className={cls}>{text}</button>;
+  return (
+    <button onClick={action} className={cls}>
+      {children}
+    </button>
+  );
 };
 
 export default Button;
