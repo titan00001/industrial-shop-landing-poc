@@ -28,7 +28,7 @@ const FooterNav: React.FunctionComponent<IFooterNavProps> = (props) => {
 
 const Footer: React.FunctionComponent<IFooterProps> = (props) => {
   return (
-    <SectionWrapper childClasses="footer">
+    <SectionWrapper backgroundColor="var(--gray-6)" childClasses="footer">
       <FooterNav />
       <FooterNav />
       <FooterNav />

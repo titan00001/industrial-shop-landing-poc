@@ -1,6 +1,7 @@
 .footer {
   .heading {
     padding: 0 var(--space-sm);
+    color: var(--white);
   }
   display: flex;
   flex-direction: row;
@@ -10,4 +11,5 @@
 .footer-nav {
   display: flex;
   flex-direction: column;
+  margin: var(--space-lg) 0;
 }
