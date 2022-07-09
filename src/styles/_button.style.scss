@@ -63,13 +63,32 @@ Buttons
   // subtle version, used for secondary actions or in combo with primary/accent button
   background-color: var(--btn-secondary-bg);
   color: var(--btn-secondary-label);
+  @include mixins.fontSmooth;
 
   &:visited {
     color: var(--btn-secondary-label);
   }
 
+  &:hover {
+    background-color: var(--btn-secondary-hover);
+  }
+
   &:active {
     background-color: var(--btn-secondary-active);
+  }
+}
+
+.btn--tertiary {
+  // subtle version, used for secondary actions or in combo with primary/accent button
+  background-color: var(--btn-tertiary-bg);
+  color: var(--btn-tertiary-label);
+
+  &:visited {
+    color: var(--btn-tertiary-label);
+  }
+
+  &:active {
+    background-color: var(--btn-tertiary-active);
   }
 }
 

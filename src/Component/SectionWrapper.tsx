@@ -5,16 +5,17 @@ interface ISectionWrapperProps {
   classes?: string;
   children: React.ReactNode;
   childClasses?: string;
+  backgroundColor?: string;
 }
 
 const SectionWrapper: React.FunctionComponent<ISectionWrapperProps> = (
   props
 ) => {
-  const { classes, children, childClasses } = props;
+  const { classes, children, childClasses, backgroundColor = "" } = props;
   const cls = clsx(classes);
   const childCls = clsx(childClasses, "container");
   return (
-    <section className={cls}>
+    <section style={{ backgroundColor }} className={cls}>
       <div className={childCls}>{children}</div>
     </section>
   );
