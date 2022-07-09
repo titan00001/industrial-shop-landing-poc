@@ -16,7 +16,7 @@ interface IHomeProps {}
 const Home: React.FunctionComponent<IHomeProps> = (props) => {
   return (
     <>
-      <Header />
+      {/* <Header /> */}
 
       <SideBySide imageSrc={imagePlaceholder}>
         <Typo h2>Lorem ipsum dolor sit amet consectetur.</Typo>
@@ -31,7 +31,7 @@ const Home: React.FunctionComponent<IHomeProps> = (props) => {
         <Button primary size="lg" text="CLick Here" />
       </SideBySide>
 
-      <SideBySideOverlap overlapIn12Column={1} imageSrc={imagePlaceholder}>
+      {/* <SideBySideOverlap overlapIn12Column={1} imageSrc={imagePlaceholder}>
         <Typo h2>Lorem ipsum dolor sit amet consectetur.</Typo>
       </SideBySideOverlap>
 
@@ -41,9 +41,9 @@ const Home: React.FunctionComponent<IHomeProps> = (props) => {
         imageSrc={imagePlaceholder}
       >
         <Typo h2>Lorem ipsum dolor sit amet consectetur.</Typo>
-      </SideBySideOverlap>
+      </SideBySideOverlap> */}
 
-      <ImageCard imgScr={imagePlaceholder}>
+      {/* <ImageCard imgScr={imagePlaceholder}>
         <Typo h2>Lorem ipsum dolor sit amet consectetur.</Typo>
         <Typo>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente quas
@@ -76,7 +76,7 @@ const Home: React.FunctionComponent<IHomeProps> = (props) => {
             quas suscipit possimus?
           </Typo>
         </ImageCard>
-      </Layout>
+      </Layout> */}
     </>
   );
 };

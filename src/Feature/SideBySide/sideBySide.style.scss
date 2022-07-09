@@ -1,12 +1,14 @@
 @use "../../styles/breakpoints.style" as breakpoint;
 
+@mixin textBox {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .SideBySide {
-  .textBox {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-  }
+  @include textBox;
 
   display: flex;
   flex-direction: column;
@@ -14,6 +16,7 @@
   &--reverse {
     display: flex;
     flex-direction: column-reverse;
+    @include textBox;
   }
 }
 

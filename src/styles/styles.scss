@@ -7,7 +7,7 @@
 @use "./layout.style";
 
 * {
-  border: 1px dashed black;
+  // border: 1px dashed black;
   box-sizing: border-box;
 }
 
@@ -19,7 +19,7 @@
   margin: auto;
 
   @include breakpoints.sm {
-    width: 100%;
+    width: 300px;
   }
   @include breakpoints.md {
     width: 720px;
