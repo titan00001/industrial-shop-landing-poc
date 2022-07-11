@@ -5,19 +5,27 @@ import "./sideBySide.style.scss";
 
 interface ISideBySideProps {
   children: React.ReactNode;
-  imageSrc: string;
+  imageSrc?: string;
   imageOnRight?: boolean;
+  hasContainer?: boolean;
 }
 
 const SideBySide: React.FunctionComponent<ISideBySideProps> = (props) => {
-  const { children, imageSrc, imageOnRight } = props;
+  const { children, imageSrc, imageOnRight, hasContainer } = props;
 
   return (
     <>
       <SectionWrapper
+        hasContainer={hasContainer}
         childClasses={`${imageOnRight ? "SideBySide--reverse" : "SideBySide"}`}
       >
-        <Image image={imageSrc} height={"400px"} aspectRatio={1} />
+        {imageSrc ? (
+          <Image image={imageSrc} height={"400px"} aspectRatio={1} />
+        ) : (
+          <div
+            style={{ height: 400, width: 400, backgroundColor: "transparent" }}
+          ></div>
+        )}
         <div className="textBox default-padding">{children}</div>
       </SectionWrapper>
     </>

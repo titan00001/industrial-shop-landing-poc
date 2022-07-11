@@ -2,7 +2,7 @@ import * as React from "react";
 import { Icon } from "@iconify/react";
 
 interface ISvgProps {
-  name: "menu";
+  name: "menu" | "arrow-right" | "arrow-left";
   width?: string;
   height?: string;
 }
@@ -16,6 +16,12 @@ const Svg: React.FunctionComponent<ISvgProps> = (props) => {
         height={height}
         width={width}
       />
+    );
+  else if (name === "arrow-left")
+    return <Icon icon="ic:baseline-arrow-back" height={height} width={width} />;
+  else if (name === "arrow-right")
+    return (
+      <Icon icon="ic:baseline-arrow-forward" height={height} width={width} />
     );
   return <>No SVG</>;
 };

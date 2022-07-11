@@ -1,0 +1,17 @@
+.imageBlur {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(black, 50%);
+  top: 0;
+  left: 0;
+}
+
+.sectionBG {
+  position: relative;
+  overflow: hidden;
+  & .sectionBgImg {
+    width: 100%;
+    position: absolute;
+  }
+}

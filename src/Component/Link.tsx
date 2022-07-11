@@ -18,6 +18,13 @@ const Link: React.FunctionComponent<ILinkProps> = (props) => {
     size ? `btn--${size}` : "",
     classes
   );
+  if (externalUrl) {
+    return (
+      <a href={externalUrl} className={cls}>
+        {children}
+      </a>
+    );
+  }
   return (
     <a href="#" className={cls}>
       {children}
