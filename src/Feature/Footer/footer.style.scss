@@ -1,3 +1,6 @@
+@use "../../styles/layout.style" as layout;
+@use "../../styles/breakpoints.style" as breakpoint;
+
 .footer {
   .heading {
     padding: 0 var(--space-sm);
@@ -12,4 +15,26 @@
   display: flex;
   flex-direction: column;
   margin: var(--space-lg) 0;
+}
+
+.footer-container {
+  @include layout.grid;
+  grid-row: var(--space-md);
+
+  @include breakpoint.rwd(480) {
+    @include layout.gridLayout((6, 1), (6, 1), (12, 1));
+  }
+
+  .heading {
+    padding: 0 var(--space-sm);
+    color: var(--white);
+  }
+
+  > div:nth-of-type(3) {
+    align-items: center;
+    justify-content: end;
+    @include breakpoint.sm {
+      align-items: baseline;
+    }
+  }
 }

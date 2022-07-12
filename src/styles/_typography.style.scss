@@ -144,12 +144,12 @@ strong {
   ol li {
     line-height: var(--body-line-height);
   }
+}
 
-  em {
-    font-style: italic;
-  }
+u {
+  text-decoration: underline;
+}
 
-  u {
-    text-decoration: underline;
-  }
+em {
+  font-style: italic;
 }
