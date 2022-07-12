@@ -192,22 +192,33 @@ const Home: React.FunctionComponent<IHomeProps> = (props) => {
       <div id="contact-us">
         <SectionWrapper classes="margin-top--md" hasContainer>
           <Typo h2>Contact Us</Typo>
-          <Typo>Link to Whatsapp, clickable icon</Typo>
+
           <SectionWrapper classes="margin-top--md">
             <Layout variant="equal-width-box">
               <ImageCard aspectRatio={1} imgScr={constants.ProfileAvatar}>
                 <Typo h3>Ashok Kumar Arya</Typo>
                 <Typo>+91 93392238368</Typo>
-                <Link externalUrl="callto://+9193392238368">Call</Link>
+                <Link
+                  target="_blank"
+                  externalUrl="https://wa.me/919339223868/?text=hello"
+                >
+                  <Typo h5>Say hello to Ashok on Whatsapp</Typo>
+                </Link>
               </ImageCard>
               <ImageCard aspectRatio={1} imgScr={constants.ProfileAvatar}>
                 <Typo h3>Ayush Arya</Typo>
                 <Typo>+91 9123719175</Typo>
+                <Link
+                  target="_blank"
+                  externalUrl="https://wa.me/919123719175/?text=hello"
+                >
+                  <Typo h5>Say hello to Ayush on Whatsapp</Typo>
+                </Link>
               </ImageCard>
             </Layout>
           </SectionWrapper>
-          <SectionWrapper>
-            <MapContainer height="500px" width="300px" />
+          <SectionWrapper classes="margin-top--md">
+            <MapContainer height="600px" width="100%" />
           </SectionWrapper>
         </SectionWrapper>
       </div>

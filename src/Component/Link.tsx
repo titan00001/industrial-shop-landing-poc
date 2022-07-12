@@ -8,10 +8,12 @@ interface ILinkProps {
   size?: "sm" | "md" | "lg" | "full-width";
   classes?: string;
   children: React.ReactNode;
+  target?: "_blank";
 }
 
 const Link: React.FunctionComponent<ILinkProps> = (props) => {
-  const { variant, size, externalUrl, internalUrl, classes, children } = props;
+  const { variant, size, externalUrl, internalUrl, classes, children, target } =
+    props;
   const cls = clsx(
     "btn",
     variant ? `btn--${variant}` : "",
@@ -20,7 +22,7 @@ const Link: React.FunctionComponent<ILinkProps> = (props) => {
   );
   if (externalUrl) {
     return (
-      <a href={externalUrl} className={cls}>
+      <a target={target} href={externalUrl} className={cls}>
         {children}
       </a>
     );

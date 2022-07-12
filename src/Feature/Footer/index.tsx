@@ -37,7 +37,7 @@ const CopyRightNav: React.FunctionComponent<IFooterNavProps> = (props) => {
   return (
     <div className="footer-nav">
       <Typo classes="heading" h5>
-        Copyright 2022. All right reserved.
+        Copyright 2022 &#169;. All rights reserved.
       </Typo>
     </div>
   );
