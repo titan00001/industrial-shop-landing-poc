@@ -24,12 +24,19 @@ const Link: React.FunctionComponent<ILinkProps> = (props) => {
         {children}
       </a>
     );
+  } else if (internalUrl) {
+    return (
+      <a href={internalUrl} className={cls}>
+        {children}
+      </a>
+    );
+  } else {
+    return (
+      <a href="#" className={cls}>
+        {children}
+      </a>
+    );
   }
-  return (
-    <a href="#" className={cls}>
-      {children}
-    </a>
-  );
 };
 
 export default Link;

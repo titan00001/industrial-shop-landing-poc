@@ -27,8 +27,8 @@ const Image: React.FunctionComponent<IImageProps> = (props) => {
     classes = "",
     image,
     aspectRatio,
-    height,
-    width,
+    height = "auto",
+    width = "auto",
     crop = false,
     children,
     fallback,
@@ -53,7 +53,7 @@ const Image: React.FunctionComponent<IImageProps> = (props) => {
         } ${
           aspectRatio && aspectRatioNum
             ? aspectRatioNum <= 1
-              ? "fitHeight"
+              ? "fitHeight-unused"
               : ""
             : ""
         } `}

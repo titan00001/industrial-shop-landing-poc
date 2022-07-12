@@ -38,10 +38,10 @@ const MobileHeader: React.FunctionComponent = () => {
 
         {isVisible && (
           <nav className="header-nav-mobile">
-            <Link>About Us</Link>
-            <Link>Speciality</Link>
-            <Link>Products</Link>
-            <Link>Contact Us</Link>
+            <Link internalUrl="#about-us">About Us</Link>
+            <Link internalUrl="#speciality">Speciality</Link>
+            <Link internalUrl="#product">Products</Link>
+            <Link internalUrl="#contact-us">Contact Us</Link>
           </nav>
         )}
       </SectionWrapper>
@@ -69,10 +69,10 @@ const Header: React.FunctionComponent<IHeaderProps> = () => {
         />
 
         <nav className="header-nav">
-          <Link>About Us</Link>
-          <Link>Speciality</Link>
-          <Link>Products</Link>
-          <Link>Contact Us</Link>
+          <Link internalUrl="#about-us">About Us</Link>
+          <Link internalUrl="#speciality">Speciality</Link>
+          <Link internalUrl="#product">Products</Link>
+          <Link internalUrl="#contact-us">Contact Us</Link>
         </nav>
       </SectionWrapper>
     </>
