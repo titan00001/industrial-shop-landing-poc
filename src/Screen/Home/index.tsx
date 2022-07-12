@@ -62,20 +62,56 @@ const Home: React.FunctionComponent<IHomeProps> = (props) => {
           </Link>
         </SideBySide>
       </SectionWrapper>
-      {/* <SectionWrapper hasContainer>
-        <SideBySide
-          hasContainer
-          imageSrc={
-            "https://media.istockphoto.com/photos/drill-picture-id157686611?b=1&k=20&m=157686611&s=170667a&w=0&h=nZ5QWOMtusKz0Ci3zmtdrmQmZytTE_ev9eyjyWiiWJo="
-          }
-        >
-          <Typo h2>Checkout our catalog</Typo>
-          <Typo>Diverse range of products</Typo>
-          <Link classes="margin-top--sm" variant="primary">
-            Products
-          </Link>
-        </SideBySide>
-      </SectionWrapper> */}
+      <SectionWrapper hasContainer>
+        <Layout variant="equal-width-box">
+          <ImageCard
+            imgScr={
+              "https://st2.depositphotos.com/3013707/6469/i/600/depositphotos_64692045-stock-photo-metal-drill-bits-drilling-and.jpg"
+            }
+            width={300}
+          >
+            <Typo h4>Drill Bits</Typo>
+            <Typo>Used for creating holes</Typo>
+            <Typo>New and old both available</Typo>
+          </ImageCard>
+
+          <ImageCard
+            imgScr={
+              "https://st3.depositphotos.com/24899686/36513/i/600/depositphotos_365130360-stock-photo-a-set-of-metal-marks.jpg"
+            }
+            width={300}
+          >
+            <Typo h4>Tap drill bits</Typo>
+            <Typo>Creating threads</Typo>
+            <Typo>New and old both available</Typo>
+          </ImageCard>
+
+          <ImageCard
+            imgScr={
+              "https://static6.depositphotos.com/1000291/542/i/600/depositphotos_5428279-stock-photo-finished-metal-reamer-tools.jpg"
+            }
+            width={300}
+          >
+            <Typo h4>Reamer Drill</Typo>
+            <Typo>Polishing holes for precise measurement</Typo>
+            <Typo>New and old both available on order</Typo>
+          </ImageCard>
+
+          <ImageCard
+            imgScr={
+              "https://st2.depositphotos.com/1036724/8873/i/450/depositphotos_88736028-stock-photo-circular-cutter-blade.jpg"
+            }
+            width={300}
+          >
+            <Typo h4>Cutter Blade</Typo>
+            <Typo>Cutting</Typo>
+            <Typo inline bold>
+              Carbide available
+            </Typo>
+            <Typo>New and old both available on order</Typo>
+          </ImageCard>
+        </Layout>
+      </SectionWrapper>
       <SectionWrapper hasContainer>
         <Carousel>
           <SideBySide
@@ -145,13 +181,7 @@ const Home: React.FunctionComponent<IHomeProps> = (props) => {
             Exercitationem, quod?
           </Typo>
         </SideBySide>
-      </SectionWrapper>
-      <SideBySide imageOnRight imageSrc={imagePlaceholder}>
-        <Typo h2>Lorem ipsum dolor sit amet consectetur.</Typo>
-        <Button primary size="md">
-          "CLick Here"
-        </Button>
-      </SideBySide> */}
+      </SectionWrapper> */}
       <SectionWrapper hasContainer>
         <Typo h2>Contact Us</Typo>
         <Typo>Link to Whatsapp, clickable icon</Typo>
@@ -172,7 +202,8 @@ const Home: React.FunctionComponent<IHomeProps> = (props) => {
           <MapContainer height="500px" width="300px" />
         </SectionWrapper>
       </SectionWrapper>
-      /
+
+      <Footer />
       {/* <SideBySideOverlap overlapIn12Column={1} imageSrc={imagePlaceholder}>
         <Typo h2>Lorem ipsum dolor sit amet consectetur.</Typo>
       </SideBySideOverlap> */}
@@ -182,7 +213,7 @@ const Home: React.FunctionComponent<IHomeProps> = (props) => {
         imageSrc={imagePlaceholder}
       >
         <Typo h2>Lorem ipsum dolor sit amet consectetur.</Typo>
-      </SideBySideOverlap> */}
+      </SideBySideOverlap>
       {/* <ImageCard imgScr={imagePlaceholder}>
         <Typo h2>Lorem ipsum dolor sit amet consectetur.</Typo>
         <Typo>
@@ -190,7 +221,6 @@ const Home: React.FunctionComponent<IHomeProps> = (props) => {
           suscipit possimus?
         </Typo>
       </ImageCard> */}
-      <Footer />
     </>
   );
 };

@@ -12,9 +12,9 @@ interface IImageCardProps {
 const ImageCard: React.FunctionComponent<IImageCardProps> = (props) => {
   const { imgScr, children, width = 360, aspectRatio = 16 / 9 } = props;
   return (
-    <div className="imageCard">
+    <div style={{ width }} className="imageCard">
       <Image image={imgScr} width={width} aspectRatio={aspectRatio} />
-      <div className="default-padding">{children}</div>
+      <div className="margin-top--sm">{children}</div>
     </div>
   );
 };

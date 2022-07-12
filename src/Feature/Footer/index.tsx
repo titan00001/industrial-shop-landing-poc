@@ -50,11 +50,9 @@ const Footer: React.FunctionComponent<IFooterProps> = (props) => {
       backgroundColor="var(--gray-10)"
       childClasses="footer-container"
     >
-      {/* <div className="footer-grid"> */}
       <FooterNav1 />
       <FooterNav2 />
       <CopyRightNav />
-      {/* </div> */}
     </SectionWrapper>
   );
 };
