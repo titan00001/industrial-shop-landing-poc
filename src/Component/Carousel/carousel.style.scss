@@ -1,3 +1,5 @@
+@use "../../styles/breakpoints.style" as breakpoint;
+
 .slider {
   display: flex;
   flex-direction: row;
@@ -7,4 +9,10 @@
 .slick-track {
   display: flex;
   align-items: center;
+}
+
+@include breakpoint.sm {
+  .slick-slider > .btn {
+    display: none;
+  }
 }

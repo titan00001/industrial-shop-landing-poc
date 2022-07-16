@@ -35,7 +35,7 @@ const Typo: React.FunctionComponent<ITypoProps> = (props) => {
   const cls = clsx(
     "typo",
     bold ? "bold" : "",
-    inline ? "inline" : "",
+    inline ? "text-inline.text-inline" : "",
     handleTextOverflow ? "truncate" : "",
     classes
   );

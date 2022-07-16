@@ -32,10 +32,10 @@ const Home: React.FunctionComponent<IHomeProps> = (props) => {
           <Typo h2>Who Are We</Typo>
           <Typo>
             With an aim to provide a one-stop solution for wide variety of
-            cutting tools, Late Shri Raja Ram Arya started this company in 1967.
-            We have offline presence in Kolkata (address), where we are taking
-            care of our customer's need by providing durable item which lasts
-            long.
+            cutting tools and industrial equipments, Late Shri Raja Ram Arya
+            started this company in 1967. We have an offline presence in
+            Kolkata, where we are taking care of our customer's need by
+            providing durable item which lasts long.
           </Typo>
         </SectionWrapper>
       </div>
@@ -53,7 +53,7 @@ const Home: React.FunctionComponent<IHomeProps> = (props) => {
             imageOnRight
             imageSrc="https://st3.depositphotos.com/1000949/18739/i/600/depositphotos_187397774-stock-photo-professional-cutting-tools-used-for.jpg"
           >
-            <Typo h2>Drills, Cutters, Reamers... you name it, we have it</Typo>
+            <Typo h2>Wide range of cutting tools</Typo>
             <Link internalUrl="#product" variant="primary" size="sm">
               View Product
             </Link>
@@ -87,7 +87,7 @@ const Home: React.FunctionComponent<IHomeProps> = (props) => {
               }
               width={300}
             >
-              <Typo h4>Tap drill bits</Typo>
+              <Typo h4>Tap drill</Typo>
               <Typo>Creating threads</Typo>
               <Typo>New and old both available</Typo>
             </ImageCard>
@@ -176,19 +176,6 @@ const Home: React.FunctionComponent<IHomeProps> = (props) => {
           </Carousel>
         </SectionWrapper>
       </div>
-      {/* <SectionWrapper
-        hasContainer
-        backgroundImage="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFZbOkE7XZPfZc1Fx4IqtDBLRt2asmfKk9Tw&usqp=CAU"
-        backgroundColor="var(--gray-2)"
-      >
-        <SideBySide imageSrc={imagePlaceholder}>
-          <Typo h2>Lorem ipsum dolor sit amet consectetur.</Typo>
-          <Typo>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-            Exercitationem, quod?
-          </Typo>
-        </SideBySide>
-      </SectionWrapper> */}
       <div id="contact-us">
         <SectionWrapper classes="margin-top--md" hasContainer>
           <Typo h2>Contact Us</Typo>
@@ -198,6 +185,7 @@ const Home: React.FunctionComponent<IHomeProps> = (props) => {
               <ImageCard aspectRatio={1} imgScr={constants.ProfileAvatar}>
                 <Typo h3>Ashok Kumar Arya</Typo>
                 <Typo>+91 93392238368</Typo>
+                <Typo>Manager</Typo>
                 <Link
                   target="_blank"
                   externalUrl="https://wa.me/919339223868/?text=hello"
@@ -217,30 +205,13 @@ const Home: React.FunctionComponent<IHomeProps> = (props) => {
               </ImageCard>
             </Layout>
           </SectionWrapper>
-          <SectionWrapper classes="margin-top--md">
-            <MapContainer height="600px" width="100%" />
+          <SectionWrapper classes="margin-top--md margin-bottom--md">
+            <MapContainer height="400px" width="100%" />
           </SectionWrapper>
         </SectionWrapper>
       </div>
 
       <Footer />
-      {/* <SideBySideOverlap overlapIn12Column={1} imageSrc={imagePlaceholder}>
-        <Typo h2>Lorem ipsum dolor sit amet consectetur.</Typo>
-      </SideBySideOverlap> */}
-      {/* <SideBySideOverlap
-        overlapIn12Column={1}
-        imageOnRight
-        imageSrc={imagePlaceholder}
-      >
-        <Typo h2>Lorem ipsum dolor sit amet consectetur.</Typo>
-      </SideBySideOverlap>
-      {/* <ImageCard imgScr={imagePlaceholder}>
-        <Typo h2>Lorem ipsum dolor sit amet consectetur.</Typo>
-        <Typo>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente quas
-          suscipit possimus?
-        </Typo>
-      </ImageCard> */}
     </>
   );
 };

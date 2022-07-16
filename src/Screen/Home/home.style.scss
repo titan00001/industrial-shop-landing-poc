@@ -1,5 +1,11 @@
+@use "../../styles/breakpoints.style" as breakpoint;
+
 .hero-section-1 {
   height: 100vh;
+
+  @include breakpoint.sm {
+    height: 80vh;
+  }
 }
 
 .hero-section-1-child {

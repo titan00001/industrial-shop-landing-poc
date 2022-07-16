@@ -37,9 +37,9 @@
   }
 }
 
-// @include breakpoints.sm {
-//   .imageContainer {
-//     height: 100% !important;
-//     width: 100% !important;
-//   }
-// }
+@include breakpoints.sm {
+  .imageContainer {
+    width: 100% !important;
+    height: auto !important;
+  }
+}

@@ -1,3 +1,14 @@
+@use "../../styles/breakpoints.style" as breakpoints;
+
 .imageCard {
   margin: 0 auto;
+  .typo {
+    text-align: center;
+  }
+}
+
+@include breakpoints.sm {
+  .imageCard {
+    width: 100% !important;
+  }
 }

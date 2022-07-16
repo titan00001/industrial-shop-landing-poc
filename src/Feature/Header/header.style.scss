@@ -1,12 +1,15 @@
+@use "../../styles/breakpoints.style" as breakpoint;
+
 .header {
   display: flex;
   align-items: center;
   justify-content: space-between;
 
-  color: var(--white);
+  color: var(--gray-10);
 
   .header-nav {
     display: flex;
+    column-gap: var(--space-sm);
   }
 
   z-index: 2;
@@ -33,4 +36,12 @@
   align-items: center;
 
   color: var(--white);
+}
+
+@include breakpoint.sm {
+  .header-mobile {
+    .imageContainer {
+      width: 50px !important;
+    }
+  }
 }
