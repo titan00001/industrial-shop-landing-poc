@@ -49,7 +49,11 @@ const Home: React.FunctionComponent<IHomeProps> = (props) => {
             >
               <Typo h2>Checkout our catalog</Typo>
               <Typo>Diverse range of products</Typo>
-              <Link classes="margin-top--sm" variant="primary">
+              <Link
+                classes="margin-top--sm"
+                internalUrl="#product"
+                variant="primary"
+              >
                 Products
               </Link>
             </SideBySide>
