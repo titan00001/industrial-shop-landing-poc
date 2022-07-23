@@ -43,9 +43,9 @@ const Carousel: React.FunctionComponent<ICarouselProps> = (props) => {
   const settings = {
     className: "slider variable-width",
     dots: true,
-    draggable: false,
-    autoplay: true,
-    autoplaySpeed: 2000,
+    draggable: true,
+    // autoplay: true,
+    // autoplaySpeed: 2000,
     infinite: true,
     slidesToShow: 1,
     slidesToScroll: 1,
