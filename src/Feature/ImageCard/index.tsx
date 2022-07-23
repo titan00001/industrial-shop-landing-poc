@@ -14,7 +14,7 @@ const ImageCard: React.FunctionComponent<IImageCardProps> = (props) => {
   return (
     <div style={{ width }} className="imageCard">
       <Image image={imgScr} width={width} aspectRatio={aspectRatio} />
-      <div className="margin-top--sm">{children}</div>
+      <div className="text-box margin-top--sm">{children}</div>
     </div>
   );
 };
