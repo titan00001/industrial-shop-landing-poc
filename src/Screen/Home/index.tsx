@@ -186,22 +186,32 @@ const Home: React.FunctionComponent<IHomeProps> = (props) => {
                 <Typo h3>Ashok Kumar Arya</Typo>
                 <Typo>+91 93392238368</Typo>
                 <Typo>Manager</Typo>
-                <Link
-                  target="_blank"
-                  externalUrl="https://wa.me/919339223868/?text=hello"
-                >
-                  <Typo h5>Say hello to Ashok on Whatsapp</Typo>
-                </Link>
+                <div className="flex-row">
+                  <Link target="_blank" externalUrl="tel:+9193392238368">
+                    Call
+                  </Link>
+                  <Link
+                    target="_blank"
+                    externalUrl="https://wa.me/919339223868/?text=hello"
+                  >
+                    <Typo h5>Whatsapp</Typo>
+                  </Link>
+                </div>
               </ImageCard>
               <ImageCard aspectRatio={1} imgScr={constants.ProfileAvatar}>
                 <Typo h3>Ayush Arya</Typo>
                 <Typo>+91 9123719175</Typo>
-                <Link
-                  target="_blank"
-                  externalUrl="https://wa.me/919123719175/?text=hello"
-                >
-                  <Typo h5>Say hello to Ayush on Whatsapp</Typo>
-                </Link>
+                <div>
+                  <Link target="_blank" externalUrl="tel:+919123719175">
+                    Call
+                  </Link>
+                  <Link
+                    target="_blank"
+                    externalUrl="https://wa.me/919123719175/?text=hello"
+                  >
+                    <Typo h5>Whatsapp</Typo>
+                  </Link>
+                </div>
               </ImageCard>
             </Layout>
           </SectionWrapper>
