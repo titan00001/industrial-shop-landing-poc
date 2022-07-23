@@ -22,7 +22,7 @@ const Home: React.FunctionComponent<IHomeProps> = (props) => {
   return (
     <>
       <Header />
-      <div id="about-us">
+      <div id="about-us" className="margin-bottom--lg">
         <SectionWrapper
           backgroundImage="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFZbOkE7XZPfZc1Fx4IqtDBLRt2asmfKk9Tw&usqp=CAU"
           classes="hero-section-1"
@@ -39,7 +39,7 @@ const Home: React.FunctionComponent<IHomeProps> = (props) => {
           </Typo>
         </SectionWrapper>
       </div>
-      <div id="speciality">
+      <div id="speciality" className="margin-bottom--lg">
         <SectionWrapper hasContainer>
           <SideBySide
             imageSrc={
@@ -59,7 +59,7 @@ const Home: React.FunctionComponent<IHomeProps> = (props) => {
             </Link>
           </SideBySide>
 
-          <SideBySide imageSrc={constants.whiteBackground}>
+          <SideBySide nofallback>
             <Typo h2>Quantity Big or Small. Give us a call</Typo>
             <Link internalUrl="#contact-us" variant="secondary" size="sm">
               Contact us
@@ -67,8 +67,9 @@ const Home: React.FunctionComponent<IHomeProps> = (props) => {
           </SideBySide>
         </SectionWrapper>
       </div>
-      <div id="product">
+      <div id="product" className="margin-bottom--lg">
         <SectionWrapper hasContainer>
+          <Typo h2>Products</Typo>
           <Layout variant="equal-width-box">
             <ImageCard
               imgScr={
@@ -136,7 +137,7 @@ const Home: React.FunctionComponent<IHomeProps> = (props) => {
                 "https://st2.depositphotos.com/3013707/6469/i/600/depositphotos_64692045-stock-photo-metal-drill-bits-drilling-and.jpg"
               }
             >
-              <Typo h2>Drill Bits</Typo>
+              <Typo h4>Drill Bits</Typo>
               <Typo>Used for creating holes</Typo>
               <Typo>New and old both available</Typo>
             </ImageCard>
@@ -146,7 +147,7 @@ const Home: React.FunctionComponent<IHomeProps> = (props) => {
                 "https://st3.depositphotos.com/24899686/36513/i/600/depositphotos_365130360-stock-photo-a-set-of-metal-marks.jpg"
               }
             >
-              <Typo h2>Tap drill bits</Typo>
+              <Typo h4>Tap drill bits</Typo>
               <Typo>Creating threads</Typo>
               <Typo>New and old both available</Typo>
             </ImageCard>
@@ -156,7 +157,7 @@ const Home: React.FunctionComponent<IHomeProps> = (props) => {
                 "https://static6.depositphotos.com/1000291/542/i/600/depositphotos_5428279-stock-photo-finished-metal-reamer-tools.jpg"
               }
             >
-              <Typo h2>Reamer Drill</Typo>
+              <Typo h4>Reamer Drill</Typo>
               <Typo>Polishing holes for precise measurement</Typo>
               <Typo>New and old both available on order</Typo>
             </ImageCard>
@@ -166,7 +167,7 @@ const Home: React.FunctionComponent<IHomeProps> = (props) => {
                 "https://st2.depositphotos.com/1036724/8873/i/450/depositphotos_88736028-stock-photo-circular-cutter-blade.jpg"
               }
             >
-              <Typo h2>Cutter Blade</Typo>
+              <Typo h4>Cutter Blade</Typo>
               <Typo>Cutting</Typo>
               <Typo inline bold>
                 Carbide available
@@ -188,7 +189,7 @@ const Home: React.FunctionComponent<IHomeProps> = (props) => {
                 <Typo>Manager</Typo>
                 <div className="flex-row">
                   <Link target="_blank" externalUrl="tel:+9193392238368">
-                    Call
+                    <Typo h5>Call</Typo>
                   </Link>
                   <Link
                     target="_blank"
@@ -203,7 +204,7 @@ const Home: React.FunctionComponent<IHomeProps> = (props) => {
                 <Typo>+91 9123719175</Typo>
                 <div>
                   <Link target="_blank" externalUrl="tel:+919123719175">
-                    Call
+                    <Typo h5>Call</Typo>
                   </Link>
                   <Link
                     target="_blank"

@@ -8,10 +8,17 @@ interface ISideBySideProps {
   imageSrc?: string;
   imageOnRight?: boolean;
   hasContainer?: boolean;
+  nofallback?: boolean;
 }
 
 const SideBySide: React.FunctionComponent<ISideBySideProps> = (props) => {
-  const { children, imageSrc, imageOnRight, hasContainer } = props;
+  const {
+    children,
+    imageSrc,
+    imageOnRight,
+    hasContainer,
+    nofallback = false,
+  } = props;
 
   return (
     <>
@@ -20,7 +27,12 @@ const SideBySide: React.FunctionComponent<ISideBySideProps> = (props) => {
         childClasses={`${imageOnRight ? "SideBySide--reverse" : "SideBySide"}`}
       >
         {imageSrc ? (
-          <Image image={imageSrc} height={"400px"} aspectRatio={1} />
+          <Image
+            image={imageSrc}
+            height={"400px"}
+            aspectRatio={1}
+            nofallback={nofallback}
+          />
         ) : (
           <div
             style={{ height: 400, width: 400, backgroundColor: "transparent" }}

@@ -18,6 +18,7 @@
   --gray-3: #bbbbbc;
   --gray-2: #d1d0d2;
   --gray-1: #e8e7e8;
+  --gray-0: #f8f8f8;
   --white: white;
 
   /* feedback */
@@ -38,7 +39,7 @@
   --color-border: var(--gray-2);
 
   /* body */
-  --color-body: var(--white);
+  --color-body: var(--gray-0);
 
   /* forms */
   --form-element-border: var(--color-border);

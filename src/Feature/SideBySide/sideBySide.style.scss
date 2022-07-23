@@ -12,17 +12,18 @@
 
   display: flex;
   flex-direction: column;
+  margin: 0 0 var(--space-md) 0;
 
   &--reverse {
     display: flex;
     flex-direction: column-reverse;
+    margin: 0 0 var(--space-md) 0;
     @include textBox;
   }
 }
 
 @include breakpoint.rwd(760) {
   .SideBySide {
-    display: flex;
     flex-direction: row;
 
     &--reverse {

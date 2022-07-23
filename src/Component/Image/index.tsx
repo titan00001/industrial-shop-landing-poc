@@ -11,6 +11,7 @@ interface IImageProps {
   crop?: boolean;
   hasBackdrop?: boolean;
   children?: React.ReactNode;
+  nofallback?: boolean;
 }
 
 const fallbackUrl = "https://pic.onlinewebfonts.com/svg/img_148071.png";
@@ -33,6 +34,7 @@ const Image: React.FunctionComponent<IImageProps> = (props) => {
     children,
     fallback,
     hasBackdrop = false,
+    nofallback = false,
   } = props;
 
   const [imageContent, setImageContent] = React.useState(
@@ -63,18 +65,22 @@ const Image: React.FunctionComponent<IImageProps> = (props) => {
             : { height, width }
         }
       >
-        <img
-          className={"image"}
-          src={imageContent.url}
-          alt={imageContent.alt}
-          style={{
-            objectFit: aspectRatio ? (crop ? "cover" : "unset") : "contain",
-            objectPosition: "left",
-          }}
-          onError={() => {
-            setImageContent(getImage(fallback, fallbackUrl));
-          }}
-        />
+        {imageContent.url && !nofallback ? (
+          <img
+            className={"image"}
+            src={imageContent.url}
+            alt={imageContent.alt}
+            style={{
+              objectFit: aspectRatio ? (crop ? "cover" : "unset") : "contain",
+              objectPosition: "left",
+            }}
+            onError={() => {
+              setImageContent(getImage(fallback, fallbackUrl));
+            }}
+          />
+        ) : (
+          <div />
+        )}
 
         <div className="imageChild">{children}</div>
       </div>

@@ -27,7 +27,7 @@ const FooterNav2: React.FunctionComponent<IFooterNavProps> = (props) => {
         Information
       </Typo>
       <Typo classes="heading">Contact: 93392238368</Typo>
-      <Typo classes="heading">Email: ayusharya021@gmail.com</Typo>
+      <Typo classes="heading">Email: rajaramarya83@gmail.com</Typo>
       <Typo classes="heading">GSTIN: 19AGAPA7804L1ZF</Typo>
     </div>
   );
@@ -35,7 +35,7 @@ const FooterNav2: React.FunctionComponent<IFooterNavProps> = (props) => {
 
 const CopyRightNav: React.FunctionComponent<IFooterNavProps> = (props) => {
   return (
-    <div className="footer-nav">
+    <div className="footer-nav copyright">
       <Typo classes="heading" h5>
         Copyright 2022 &#169;. All rights reserved.
       </Typo>

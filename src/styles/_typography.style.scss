@@ -46,7 +46,8 @@ body {
   font-size: var(--text-base-size);
   font-family: var(--font-primary);
   color: var(--color-text);
-  mix-blend-mode: difference;
+  // mix-blend-mode: difference;
+  background-color: var(--gray-0);
 }
 
 h1,

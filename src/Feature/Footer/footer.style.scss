@@ -37,4 +37,8 @@
       align-items: baseline;
     }
   }
+
+  & .copyright {
+    margin-top: calc(var(--space-sm) * -1);
+  }
 }
