@@ -44,7 +44,7 @@ const Home: React.FunctionComponent<IHomeProps> = (props) => {
           <Carousel>
             <SideBySide
               imageSrc={
-                "https://media.istockphoto.com/photos/drill-picture-id157686611?b=1&k=20&m=157686611&s=170667a&w=0&h=nZ5QWOMtusKz0Ci3zmtdrmQmZytTE_ev9eyjyWiiWJo="
+                "https://static5.depositphotos.com/1007266/521/i/600/depositphotos_5211797-stock-photo-drill-bits-set-isolated-on.jpg"
               }
             >
               <Typo h2>Checkout our catalog</Typo>
@@ -180,6 +180,94 @@ const Home: React.FunctionComponent<IHomeProps> = (props) => {
                 Carbide available
               </Typo>
               <Typo>New and old both available on order</Typo>
+            </ImageCard>
+
+            <ImageCard
+              imgScr={
+                "https://jksuperdrive.com/wp-content/uploads/2021/07/Toolbit-1.jpg"
+              }
+              width={300}
+            >
+              <Typo h4>Tool bit</Typo>
+              <Typo>Used with lathe machine for cutting</Typo>
+              <Typo>New and old both available on order</Typo>
+            </ImageCard>
+
+            <ImageCard
+              imgScr={
+                "https://thumbs.dreamstime.com/b/machine-roll-taps-one-die-tools-composition-isolate-white-background-80533823.jpg"
+              }
+              width={300}
+            >
+              <Typo h4>Tap cutter</Typo>
+              <Typo>
+                One sharp metric steel tapping tool for hand cutting internal
+                threads in holes of nuts and metal materials
+              </Typo>
+            </ImageCard>
+
+            <ImageCard
+              imgScr={
+                "https://st2.depositphotos.com/1993297/8117/i/450/depositphotos_81177496-stock-photo-carbide-endmills.jpg"
+              }
+              width={300}
+            >
+              <Typo h4>Endmill</Typo>
+              <Typo>
+                Professional cutting tools. Few metallic carbide endmills,
+                different size used for metalwork.
+              </Typo>
+            </ImageCard>
+
+            <ImageCard
+              imgScr={
+                "https://st.depositphotos.com/1005951/2888/i/600/depositphotos_28885269-stock-photo-carbide-tools.jpg"
+              }
+              width={300}
+            >
+              <Typo h4>Tip Tool</Typo>
+              <Typo>
+                Indexable lathe tools with replaceable tips. Inserts can be
+                rotated to a new cutting edge
+              </Typo>
+            </ImageCard>
+
+            <ImageCard
+              imgScr={
+                "https://st4.depositphotos.com/10491502/20693/i/600/depositphotos_206931702-stock-photo-screw-tap-screw-threading-die.jpg"
+              }
+              width={300}
+            >
+              <Typo h4>Die and Die Handle</Typo>
+              <Typo>
+                Diestock tool to make the male and female threads to screw or
+                nuts.
+              </Typo>
+            </ImageCard>
+
+            <ImageCard
+              imgScr={
+                "https://static6.depositphotos.com/1006753/572/i/600/depositphotos_5729051-stock-photo-slide-gauge.jpg"
+              }
+              width={300}
+            >
+              <Typo h4>Vernier Callipers</Typo>
+              <Typo>
+                Vernier calipers are used for more accurate measuring than can
+                be achieved with a measuring rule or a slide caliper.
+              </Typo>
+            </ImageCard>
+            <ImageCard
+              imgScr={
+                "https://st.depositphotos.com/1018472/4804/i/600/depositphotos_48041719-stock-photo-micrometer-isolated-on-white.jpg"
+              }
+              width={300}
+            >
+              <Typo h4>Screw Gauge</Typo>
+              <Typo>
+                Micrometers are used for more accurate measuring than can be
+                achieved with a measuring rule or a slide caliper.
+              </Typo>
             </ImageCard>
           </Layout>
         </SectionWrapper>
